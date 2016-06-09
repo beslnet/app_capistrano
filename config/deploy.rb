@@ -2,7 +2,7 @@
 lock '3.5.0'
 
 set :rvm_type                , :user
-set :rvm_ruby_version        , '2.3.1'
+set :rvm_ruby_version        , '2.3.0'
 
 set :user                    , 'ubuntu'
 set :application             , 'app_capistrano'
@@ -11,7 +11,7 @@ set :scm                     , :git
 set :repo_url                , 'git@github.com:beslnet/app_capistrano.git'
 set :branch                  , :master
 set :keep_releases           , 5
-set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/.ssh/id_rsa.pub) }
+set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/Desafio\ Latam/desafiolatam_alumnos.pem) }
 
 ## Linked Files & Directories (Default None):
 set :linked_files, %w{config/database.yml config/secrets.yml .env}
